@@ -43,4 +43,3 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(message);
     });
 });
-

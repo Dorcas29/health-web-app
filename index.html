@@ -10,7 +10,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Welcome</a></li>
-            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="#about-us">About Us</a></li>
             <li><a href="doctors.html">Doctors & Dentists</a></li>
             <li><a href="reviews.html">Reviews/Testimonials</a></li>
             <li><a href="notifications.html">Notifications</a></li>
@@ -26,26 +26,27 @@
 
     <main>
         <section id="login-register">
-            <h2>Login/Register</h2>
-            <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-            <form id="register-form">
-                <label for="new-username">New Username:</label>
-                <input type="text" id="new-username" name="new-username" required>
-                <label for="new-password">New Password:</label>
-                <input type="password" id="new-password" name="new-password" required>
-                <button type="submit">Register</button>
-            </form>
+            <div id="login-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="register-section">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <input type="text" id="new-username" name="username" placeholder="Username" required>
+                    <input type="password" id="new-password" name="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
         </section>
 
         <section id="about-us">
             <h2>About Us</h2>
-            <p>Our mission is to ensure timely health compliance and effective medication management for all patients. We have numerous success stories of patients who have benefitted from our platform.</p>
+            <p>Our mission is to provide comprehensive health tracking and appointment management. We have successfully helped numerous patients manage their health effectively.</p>
         </section>
     </main>
 

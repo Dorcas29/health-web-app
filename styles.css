@@ -15,21 +15,25 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav input[type="text"] {
     padding: 5px;
     margin-left: 10px;
+    border-radius: 4px;
+    border: none;
 }
 
 header {
@@ -45,10 +49,50 @@ header img {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+#login-register {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#login-section, #register-section {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+#login-section h2, #register-section h2 {
+    margin-top: 0;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -56,13 +100,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
-}
-
-video {
     width: 100%;
-    max-width: 600px;
 }
 
